@@ -1,0 +1,6 @@
+{
+ :timeout 8000
+ :static "static"
+ :secret "strictly-confidential"
+ :port 2222
+ }

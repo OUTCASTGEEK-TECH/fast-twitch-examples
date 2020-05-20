@@ -1,0 +1,19 @@
+;; shadow-cljs configuration
+{:deps true
+
+ :nrepl {:port 9025}
+ :socket-repl {:port 9026}
+ :http-port {:port 2626
+             :host "localhost"}
+
+ :builds
+ {:app
+  {:main core/main
+   :target :node-script
+   :output-to "app.js"
+   :compiler-options {:optimizations :simple
+                      :infer-externs :all
+                      :output-feature-set :es7
+                      :fn-invoke-direct true}}
+  }
+ }
