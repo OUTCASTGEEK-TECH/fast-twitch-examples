@@ -1,6 +1,6 @@
 (ns ui.templates.default
   (:require [taoensso.timbre :as log]
-            [tick.alpha.api :as t]
+            [tick.core :as t]
             [bidi.bidi :refer [path-for]]
             [routing :refer [routing-data]]
             [fast-twitch.preload :refer [quick-css quick-img quick-js
